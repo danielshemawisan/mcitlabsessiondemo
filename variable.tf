@@ -15,13 +15,13 @@ variable "prefix"{
  type=string
  default="danielmcit"
 }
-variable "account_tier"{
+variable "firstname"{
   type=string
-  default="Standard"
+  default="daniel"
 }
-variable "access_tier"{
+variable "lastname"{
   type=string
-  default="Cool"
+  default="awisan"
 }
 variable "account_replication_type"{
   type=string
