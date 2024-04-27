@@ -4,6 +4,9 @@ locals {
         firstname = "daniel"
         lastname = "awisan"
         city = "montreal"
+        lengthfirstname = length("daniel") 
+        lengthlastname = length("awisan")
+        lengthcity = length("montreal")
 }
 output  "print"{
         value = local.servicename
