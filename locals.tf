@@ -12,11 +12,11 @@ output "secondprint" {
        value = local.forum
 }
 output  "printfirstname"{
-        value = local.servicename
+        value = local.firstname
 }
 output  "printlastname"{
-        value = local.servicename
+        value = local.lastname
 }
 output  "printcity"{
-        value = local.servicename
+        value = local.city
 }
