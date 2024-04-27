@@ -11,12 +11,12 @@ output  "print"{
 output "secondprint" {
        value = local.forum
 }
-output  "printfirstname"{
+output  "thirdprint"{
         value = local.firstname
 }
-output  "printlastname"{
+output  "fourthprint"{
         value = local.lastname
 }
-output  "printcity"{
+output  "fifthprint"{
         value = local.city
 }
