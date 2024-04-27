@@ -14,12 +14,12 @@ output  "print"{
 output "secondprint" {
        value = local.forum
 }
-output  "thirdprint"{
+output  "thirdprintfirstname"{
         value = local.firstname
 }
-output  "fourthprint"{
+output  "fourthprintlastname"{
         value = local.lastname
 }
-output  "fifthprint"{
+output  "fifthprintcity"{
         value = local.city
 }
