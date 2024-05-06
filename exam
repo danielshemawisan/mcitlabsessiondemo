@@ -10,10 +10,6 @@ locals {
 output "check_azure" {
   value = local.is_azure_in_list ? "azure is part of the cloud list" : "azure is not part of the cloud list"
 }
-variable "clouds" {
-  type    = list(string)
-  default = ["azure", "aws", "gcp"]
-}
 
 locals {
   updated_clouds = concat(var.clouds, ["alibaba", "ibm"])
