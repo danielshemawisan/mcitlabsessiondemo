@@ -1,0 +1,24 @@
+locals {
+  clouds = ["azure", "aws", "gcp", "alibaba", "ibm"]
+  cloud_owners = ["Microsoft", "Amazon", "Google", "Alibaba", "IBM"]
+}
+
+# Check if "azure" is part of the cloud list
+if contains(local.clouds, "azure") {
+  output "message" {
+    value = "azure is part of the cloud list"
+  }
+} else {
+  output "message" {
+    value = "azure is not part of the cloud list"
+  }
+}
+
+# Map clouds with cloud_owners
+locals {
+  cloud_map = {for idx, cloud in local.clouds: cloud => local.cloud_owners[idx]}
+}
+
+output "cloud_owners_mapping" {
+  value = local.cloud_map
+}
